@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { IoPlayOutline } from "react-icons/io5";
-import TeamMember from '../components/TeamMember';
+
 import Testimonials from '../components/Testimonials';
 import Menu from '../components/Menu';
 import PageHeader from "../components/PageHeader";
@@ -175,28 +175,7 @@ export default function Aboutus() {
         </div>
       </section>
 
-      {/* Team Member Section */}
-      <section className="w-full py-20 bg-[#ffa425]">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Team Member</h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Varius sed pharetra dictum neque massa congue
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <TeamMember
-                key={index}
-                name={member.name}
-                role={member.role}
-                image={member.image}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+  
 
       {/* Testimonials Section */}
       <section className="w-full bg-[#1E1E1E]">
