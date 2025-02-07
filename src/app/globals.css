@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-great-vibes: 'Great Vibes', cursive;
+  }
+}
+
+.font-great-vibes {
+  font-family: var(--font-great-vibes);
+}
+
+
